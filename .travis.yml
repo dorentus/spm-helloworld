@@ -8,7 +8,7 @@ osx_image: xcode7.2
 language: generic
 
 install:
-  - wget https://gist.githubusercontent.com/dorentus/53545344d52ee0bc84f3/raw/96dc45f07197fcad1fe901872f46c5528e377568/swift-install -O swift-install
+  - wget https://gist.githubusercontent.com/dorentus/53545344d52ee0bc84f3/raw/swift-install -O swift-install
   - chmod +x swift-install
 
 script:
