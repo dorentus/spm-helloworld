@@ -13,7 +13,6 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - libstdc++6-4.7-dev
-      - clang-3.6
 
 install:
   - wget https://gist.githubusercontent.com/dorentus/53545344d52ee0bc84f3/raw/swift-install -O swift-install
