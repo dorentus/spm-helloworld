@@ -21,6 +21,5 @@ install:
 
 script:
   - $HOME/swift-install DEVELOPMENT-SNAPSHOT-2016-02-25-a $HOME/swift-dist
-  - tree $HOME/swift-dist
   - $HOME/swift-dist/usr/bin/swift build
   - .build/debug/HelloWorld
