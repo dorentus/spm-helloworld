@@ -18,6 +18,8 @@ addons:
 install:
   - wget https://gist.githubusercontent.com/dorentus/53545344d52ee0bc84f3/raw/swift-install -O $HOME/swift-install
   - chmod +x $HOME/swift-install
+  - which dpkg > /dev/null && wget http://launchpadlibrarian.net/160737168/libicu52_52.1-3_amd64.deb && mkdir libicu && pushd libicu && dpkg --unpack ../libicu52_52.1-3_amd64.deb ./ && popd
+  - export LD_LIBRARY_PATH=./libicu/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
 
 script:
   - $HOME/swift-install DEVELOPMENT-SNAPSHOT-2016-02-25-a $HOME/swift-dist
